@@ -1,0 +1,20 @@
+{
+  "name": "Main Server",
+  "port": 80,
+  "GRANT_CONFIG": {
+    "defaults": {
+      "protocol": "https",
+      "host": "www.example.com",
+      "transport": "session",
+      "state": true
+    },
+    "google": {
+      "key": "",
+      "secret": "",
+      "scope": ["openid", "profile", "email"],
+      "nonce": true,
+      "custom_params": { "access_type": "offline" },
+      "callback": "/api/user/success"
+    }
+  }
+}

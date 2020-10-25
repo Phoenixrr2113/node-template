@@ -1,0 +1,21 @@
+{
+  "name": "Main Server",
+  "port": 3001,
+  "db_uri": "",
+  "GRANT_CONFIG": {
+    "defaults": {
+      "protocol": "http",
+      "host": "localhost:3001",
+      "transport": "session",
+      "state": true
+    },
+    "google": {
+      "key": "",
+      "secret": "",
+      "scope": ["openid", "profile", "email"],
+      "nonce": true,
+      "custom_params": { "access_type": "offline" },
+      "callback": "/api/user/success"
+    }
+  }
+}
